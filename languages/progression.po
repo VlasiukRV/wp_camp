@@ -1,0 +1,863 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. Text in function
+#: camp/inc/template-tags.php:37
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: camp/inc/template-tags.php:37
+msgid "%1$s on %2$s <span class=\"says\">said:</span>"
+msgstr ""
+
+#. Text in function
+#: camp/archive.php:16
+msgid "%s Category"
+msgstr ""
+
+#. Text in function
+#: camp/comments.php:55
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. Text in function
+#: camp/inc/template-tags.php:27
+msgid "(Edit)"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "404 Error Message Heading"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "404 Error Message Text"
+msgstr ""
+
+#. Text in function
+#: camp/single.php:32 camp/content-blog.php:26
+msgid "<div class=\"tag-cloud\"><span>Tags</span>: "
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Appearance"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Article Zoom Icon Background Image"
+msgstr ""
+
+#. Text in function
+#: camp/author.php:14
+msgid "Author: %s"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Basic"
+msgstr ""
+
+#. Text in echo
+#: camp/archive.php:20
+msgid "Blog Archives"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Blog Index Column"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Blog/Portfolio"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Body Background Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Button Background"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Button Background Hover"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Check this box to display 1 column.  Uncheck this box to display the blog in "
+"two columns."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Check to display sidebar on portfolio post page."
+msgstr ""
+
+#. Text in echo
+#: camp/cart-progression.php:21
+msgid "Checkout"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose a Main Navigation Font.  Default - Economica"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose a Sub-Menu navigation Font.  Default - Doppio One"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose how long each slide will show (in milliseconds)"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose how many columns you want in the shop (2-4 columns)."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Choose how many columns you want to use for our footer widgets (1-4 Columns)."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose how many many products will show up per page on the shop index."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose our button background color. - #f4f4ef"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose our button hover background color.  Default - #db5f32"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose the H1-H2 Heading Font.  Default - Dosis"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose the default menu hover background color.  Default - #df723c"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Choose to display the navigation bullets on the bottom left of the "
+"slideshow. "
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose to have your slide show autoplay or not."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose to turn the next/previous buttons on or off. "
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Choose your background color for the featured slider.  Default - #ffffff"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Choose your background color for the highlight boxes.  Default - #f7f6f2"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your border color for the featured slider.  Default - #c8c7c2"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your border color for the highlight boxes.  Default - #c8c7c2"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your copyright text here. "
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your default heading font color.  Default - #5b5b5b"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your link color.  Default - #78bea1"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your logo width in pixels.  Default is 120."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Choose your slider animation between fade and slide."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Columns on Shop"
+msgstr ""
+
+#. Text in echo
+#: camp/comments.php:54
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: camp/comments.php:69
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Copyright"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Crepe"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Custom CSS Code"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Custom Javascript Code"
+msgstr ""
+
+#. Text in function
+#: camp/archive.php:10
+msgid "Daily Archives: %s"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Default Heading Colors"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Default Link Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Bread Crumbs"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Footer Widgets"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Hover Images on Portfolio, Shop, and Blog Posts"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Sidebar on Blog Post pages"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Sidebar on Blog, Archives, and Search"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display Sidebar on Shop Index"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Display sidebar on portfolio post page?"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Dribbble Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/inc/template-tags.php:55
+msgid "Edit"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:96 camp/contact-full-width.php:96
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:87 camp/contact-full-width.php:87
+msgid "Email Successfully Sent!"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Enable Search Form in the Header?"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Enter a description for the homepage, about 140 characters."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Enter a title for the homepage, leave blank if you want to use an auto "
+"generated one or a third party plugin."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Enter your custom 404 error heading."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Enter your custom 404 error message."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Facebook Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Fade"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "FavIcon"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Animation"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Autoplay"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Autoplay Speed"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Background Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Border Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Next / Previous Buttons"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Featured Slider Thumbnail Navigation Buttons"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Flickr Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Footer Widget Column Count"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "French Toast"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Google Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Header Background Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Heading Font H1-H2"
+msgstr ""
+
+#. Text in echo
+#: camp/index.php:6 camp/single-portfolio.php:4
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Homepage Meta Description"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Homepage Title"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "LinkedIn Linkin Social Icons Widget"
+msgstr ""
+
+#. Text in echo
+#: camp/cart-progression.php:9
+msgid "Login"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Logo"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Logo Width"
+msgstr ""
+
+#. Text in echo
+#: camp/cart-progression.php:18
+msgid "Logout"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Main Highlight Box Background Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Main Highlight Box Border Color"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Main body background color.  Default - #ebe7df"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:100 camp/contact-full-width.php:100
+msgid "Message"
+msgstr ""
+
+#. Text in function
+#: camp/archive.php:12
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:92 camp/contact-full-width.php:92
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Navigation And Heading H3-H6 Font"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Navigation Background Image"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Navigation Sub-Menu Font"
+msgstr ""
+
+#. Text in function
+#: camp/comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Off"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Omelette"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "On"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Pancake"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Paste custom JavaScript code here without &lt;script&gt;&lt;/script&gt; tags."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Paste custom JavaScript code here without &lt;style&gt;&lt;/style&gt; tags."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Paste your tracking code here e.g. Google Analytics etc... without &lt;"
+"script&gt; tags."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Photo Zoom Icon Background Image"
+msgstr ""
+
+#. Text in echo
+#: camp/inc/template-tags.php:27
+msgid "Pingback:"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:83 camp/contact-full-width.php:83
+msgid ""
+"Please check if you have filled all the fields with valid information. Thank "
+"you."
+msgstr ""
+
+#. Text in echo
+#: camp/single.php:29 camp/content-blog.php:19
+msgid "Posted on"
+msgstr ""
+
+#. Text in echo
+#: camp/content-product.php:72 camp/single-product/price.php:16
+msgid "Price:"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Products Per Page on Shop"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "RSS Link in Social Icons Widget"
+msgstr ""
+
+#. Text in echo
+#: camp/content-blog.php:24
+msgid "Read More"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Retina Article Zoom Icon Background Image"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Retina Photo Zoom Icon Background Image"
+msgstr ""
+
+#. Text in echo
+#: camp/searchform.php:3
+msgid "Search"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Search All Pages or Just Products?"
+msgstr ""
+
+#. Text in function
+#: camp/search.php:8
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select checkbox to have search display in the header."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select checkbox to search all pages."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Select this checkbox to display the hover icons on the portfolio, shop and "
+"blog."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select this checkbox to display the sidebar in the blog pages."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select this checkbox to display the sidebar in the blog post pages."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Select this checkbox to display the sidebar on the Shop Index and Product "
+"Pages."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select this checkbox to enable bread-crumb navigation."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Select this checkbox to enable the footer widgets."
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:103 camp/contact-full-width.php:103
+msgid "Send Message"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Shop"
+msgstr ""
+
+#. Text in echo
+#: camp/cart-progression.php:20 camp/functions.php:158
+msgid "Shopping Cart"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Skype Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Slide"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Slider"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Social Icon will display/hide automatically in the social icons widget."
+msgstr ""
+
+#. Text in echo
+#: camp/search.php:15
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Sub-Navigation Hover Background Color"
+msgstr ""
+
+#. Text in function
+#: camp/archive.php:18
+msgid "Tag: %s"
+msgstr ""
+
+#. Text in echo
+#: camp/contact.php:88 camp/contact-full-width.php:88
+msgid "Thank you for using my contact form! I will be in touch with you soon."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"These icons will display in the custom social icons widget of your theme.  "
+"Leave the text area blank and the icon will disappear automatically."
+msgstr ""
+
+#. Text in echo
+#: camp/comments.php:3
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Tools"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Top header background color above navigation.  Default - #713d26"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Tracking Code"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Twitter Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Upload your hover icon background image for articles/links.  Photoshop "
+"template included in your theme files zoom-icon.psd."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Upload your hover icon background image for articles/links.  Photoshop "
+"template included in your theme files zoom-icon@2x.psd.  <strong>Note</"
+"strong>: This is for retina displays as the icons are 200% larger.  If you "
+"don not want to support retina displays, just upload the default icons again "
+"to this spot."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Upload your hover icon background image for images.  Photoshop template "
+"included in your theme files zoom-icon.psd."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Upload your hover icon background image for photographs.  Photoshop template "
+"included in your theme files zoom-icon@2x.psd.  <strong>Note</strong>:  This "
+"is for retina displays as the icons are 200% larger.  If you don not want to "
+"support retina displays, just upload the default icons again to this spot."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Use the upload button to upload your favicon (bookmark icon) and then click "
+"<strong>Use this image</strong>."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"Use the upload button to upload your sites logo and then click <strong>Use "
+"this image</strong>."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Vimeo Link in Social Icons Widget"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Waffle"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Widget Area Social Icons"
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid "Widgets"
+msgstr ""
+
+#. Text in echo
+#: camp/single.php:29 camp/content-blog.php:19
+msgid "Written by"
+msgstr ""
+
+#. Text in function
+#: camp/archive.php:14
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: camp/inc/template-tags.php:58
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: camp/options.php:658
+msgid ""
+"se the upload button to upload your sites navigation background image. There "
+"is a template for this file in your download \"Misc > Templates > navigaiton-"
+"bg.psd\".  Also check the documentation if you need help with this."
+msgstr ""

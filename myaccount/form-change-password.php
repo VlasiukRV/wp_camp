@@ -13,7 +13,7 @@ global $woocommerce;
 ?>
 
 <?php $woocommerce->show_messages(); ?>
-
+<div class="item-container">
 <form action="<?php echo esc_url( get_permalink(woocommerce_get_page_id('change_password')) ); ?>" method="post">
 
 	<p class="form-row form-row-first">
@@ -31,4 +31,4 @@ global $woocommerce;
 	<?php $woocommerce->nonce_field('change_password')?>
 	<input type="hidden" name="action" value="change_password" />
 
-</form>
+</form></div>

@@ -12,7 +12,18 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header('shop'); ?>
-
+<style>
+.item-container {
+border: 1px solid #c8c7c2;
+background: #f7f6f2;
+display: inline-block;
+}
+</style>
+	
+<?php if(of_get_option('fw_shop', '1')): ?><div id="container-sidebar"><?php endif; ?>
+			
+			
+	
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -37,6 +48,10 @@ get_header('shop'); ?>
 		 */
 		do_action('woocommerce_after_main_content');
 	?>
+	
+	
+	<?php if(of_get_option('fw_shop', '1')): ?></div><?php endif; ?>
+		
 
 	<?php
 		/**

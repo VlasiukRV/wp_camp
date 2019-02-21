@@ -24,16 +24,20 @@ if ( empty( $woocommerce_loop['columns'] ) )
 // Increase loop count
 $woocommerce_loop['loop']++;
 ?>
-<li class="product-category product<?php
-    if ( ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] == 0 || $woocommerce_loop['columns'] == 1)
-        echo ' first';
+<li class="product column-<?php echo of_get_option('shop_cols', '4'); ?> <?php
 	if ( $woocommerce_loop['loop'] % $woocommerce_loop['columns'] == 0 )
-		echo ' last';
+		echo 'last';
+	elseif ( ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] == 0 )
+		echo 'first';
 	?>">
-
+	
+	<div class="item-container">
+	
 	<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
 
-	<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
+	<div class="product-thumbnail-iceberg item-container-image">
+		<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>" class="hover-icon2">
+			<div class="zoom-icon2 zoom-icon-article2">zoom</div>
 
 		<?php
 			/**
@@ -43,15 +47,20 @@ $woocommerce_loop['loop']++;
 			 */
 			do_action( 'woocommerce_before_subcategory_title', $category );
 		?>
+		
+		</a>
+		</div>
+		
+		<div class="item-container-content">
 
-		<h3>
+		<h4 class="aligncenter"><a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
 			<?php
 				echo $category->name;
 
 				if ( $category->count > 0 )
 					echo apply_filters( 'woocommerce_subcategory_count_html', ' <mark class="count">(' . $category->count . ')</mark>', $category );
-			?>
-		</h3>
+			?></a>
+		</h4>
 
 		<?php
 			/**
@@ -60,8 +69,11 @@ $woocommerce_loop['loop']++;
 			do_action( 'woocommerce_after_subcategory_title', $category );
 		?>
 
-	</a>
+
 
 	<?php do_action( 'woocommerce_after_subcategory', $category ); ?>
+	
+		</div><!-- close .item-container-content -->
+	</div><!-- close .item-container -->
 
 </li>

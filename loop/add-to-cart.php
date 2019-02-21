@@ -25,9 +25,7 @@ global $product;
 			'class' => ''
 		);
 
-		$handler = apply_filters( 'woocommerce_add_to_cart_handler', $product->product_type, $product );
-
-		switch ( $handler ) {
+		switch ( $product->product_type ) {
 			case "variable" :
 				$link['url'] 	= apply_filters( 'variable_add_to_cart_url', get_permalink( $product->id ) );
 				$link['label'] 	= apply_filters( 'variable_add_to_cart_text', __( 'Select options', 'woocommerce' ) );

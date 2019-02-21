@@ -13,9 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $woocommerce;
 ?>
-
-<?php do_action( 'woocommerce_before_mini_cart' ); ?>
-
 <ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 
 	<?php if ( sizeof( $woocommerce->cart->get_cart() ) > 0 ) : ?>
@@ -65,10 +62,8 @@ global $woocommerce;
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
 	<p class="buttons">
-		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="button"><?php _e( 'View Cart &rarr;', 'woocommerce' ); ?></a>
+		<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="button"><?php _e( 'View Basket &rarr;', 'woocommerce' ); ?></a>
 		<a href="<?php echo $woocommerce->cart->get_checkout_url(); ?>" class="button checkout"><?php _e( 'Checkout &rarr;', 'woocommerce' ); ?></a>
 	</p>
 
 <?php endif; ?>
-
-<?php do_action( 'woocommerce_after_mini_cart' ); ?>

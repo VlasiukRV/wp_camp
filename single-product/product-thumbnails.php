@@ -1,45 +1,44 @@
 <?php
 /**
  * Single Product Thumbnails
- *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+global $post, $woocommerce;
+?>
+	<div class="thumbnails"><?php	
+		$attachments = get_posts( array(
+			'post_type' 	=> 'attachment',
+			'numberposts' 	=> -1,
+			'post_status' 	=> null,
+			'post_parent' 	=> $post->ID,
+			'post__not_in'	=> array( get_post_thumbnail_id() ),
+			'post_mime_type'=> 'image',
+			'orderby'		=> 'menu_order',
+			'order'			=> 'ASC'
+		) );
+		if ($attachments) {
 
-global $post, $product, $woocommerce;
+			$loop = 0;
+			$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 
-$attachment_ids = $product->get_gallery_attachment_ids();
+			foreach ( $attachments as $key => $attachment ) {
 
-if ( $attachment_ids ) {
-	?>
-	<div class="thumbnails"><?php
+				if ( get_post_meta( $attachment->ID, '_woocommerce_exclude_image', true ) == 1 ) 
+					continue;
 
-		$loop = 0;
-		$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
+				$classes = array( 'zoom' );
 
-		foreach ( $attachment_ids as $id ) {
+				if ( $loop == 0 || $loop % $columns == 0 ) 
+					$classes[] = 'first';
 
-			$classes = array( 'zoom' );
+				if ( ( $loop + 1 ) % $columns == 0 ) 
+					$classes[] = 'last';
 
-			if ( $loop == 0 || $loop % $columns == 0 )
-				$classes[] = 'first';
+				printf( '<a href="%s" rel="prettyPhoto[product-gallery]" class="%s">%s</a>', wp_get_attachment_url( $attachment->ID ), implode(' ', $classes), wp_get_attachment_image( $attachment->ID, 'shop_thumbnail' ) );
 
-			if ( ( $loop + 1 ) % $columns == 0 )
-				$classes[] = 'last';
+				$loop++;
 
-			$attachment_url = wp_get_attachment_url( $id );
+			}
 
-			if ( ! $attachment_url )
-				continue;
-
-			printf( '<a href="%s" title="%s" rel="prettyPhoto[product-gallery]" class="%s">%s</a>', esc_attr( $attachment_url ), esc_attr( get_the_title( $id ) ), implode( ' ', $classes ), wp_get_attachment_image( $id, apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ) ) );
-
-			$loop++;
 		}
-
 	?></div>
-	<?php
-}

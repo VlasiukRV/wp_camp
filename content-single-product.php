@@ -22,7 +22,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div itemscope itemtype="http://schema.org/Product" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+	
+	
+	<h2 class="page-title"><?php the_title(); ?></h2>
+	
+	<div class="grid3columnbig">
 	<?php
 		/**
 		 * woocommerce_show_product_images hook
@@ -32,7 +36,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
+	</div>
 
+	
+	<div class="grid3column lastcolumn">
 	<div class="summary entry-summary">
 
 		<?php
@@ -50,7 +57,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		?>
 
 	</div><!-- .summary -->
+	
 
+	</div><!-- close .grid3colum -->
+	
+	<div class="clearfix"></div>
+	
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook
@@ -60,7 +72,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_after_single_product_summary' );
 	?>
+	
+
+
 
 </div><!-- #product-<?php the_ID(); ?> -->
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

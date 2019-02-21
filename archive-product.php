@@ -12,6 +12,12 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header('shop'); ?>
+<style>#container-sidebar {
+    float: none;
+    width: 100%;
+}</style>
+
+<?php if(of_get_option('fw_shop', '1')): ?><div id="container-sidebar"><?php endif; ?>
 
 	<?php
 		/**
@@ -24,7 +30,11 @@ get_header('shop'); ?>
 	?>
 
 		<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-
+		
+		
+		
+		
+		
 		<?php do_action( 'woocommerce_archive_description' ); ?>
 
 		<?php if ( have_posts() ) : ?>
@@ -74,14 +84,16 @@ get_header('shop'); ?>
 		 */
 		do_action('woocommerce_after_main_content');
 	?>
-
+	
+	<?php if(of_get_option('fw_shop', '1')): ?></div><?php endif; ?>
+	
 	<?php
 		/**
 		 * woocommerce_sidebar hook
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action('woocommerce_sidebar');
+		//do_action('woocommerce_sidebar');
 	?>
 
 <?php get_footer('shop'); ?>

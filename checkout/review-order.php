@@ -24,7 +24,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 		</thead>
 		<tfoot>
 			<tr class="cart-subtotal">
-				<th><?php _e( 'Cart Subtotal', 'woocommerce' ); ?></th>
+				<th><?php _e( 'Basket Subtotal', 'woocommerce' ); ?></th>
 				<td><?php echo $woocommerce->cart->get_cart_subtotal(); ?></td>
 			</tr>
 

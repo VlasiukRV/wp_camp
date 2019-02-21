@@ -19,9 +19,9 @@ global $post, $product;
 		<span itemprop="productID" class="sku_wrapper"><?php _e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo $product->get_sku(); ?></span>.</span>
 	<?php endif; ?>
 
-	<?php echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', sizeof( get_the_terms( $post->ID, 'product_cat' ) ), 'woocommerce' ) . ' ', '.</span>' ); ?>
+	<?php echo $product->get_categories( ', ', '<span class="posted_in">' . _n( '<strong>Category</strong>:', '<strong>Categories</strong>:', sizeof( get_the_terms( $post->ID, 'product_cat' ) ), 'woocommerce' ) . ' ', '.</span>' ); ?>
 
-	<?php echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', sizeof( get_the_terms( $post->ID, 'product_tag' ) ), 'woocommerce' ) . ' ', '.</span>' ); ?>
+	<?php echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( '<strong>Tag</strong>:', '<strong>Tags</strong>:', sizeof( get_the_terms( $post->ID, 'product_tag' ) ), 'woocommerce' ) . ' ', '.</span>' ); ?>
 
 	<?php do_action( 'woocommerce_product_meta_end' ); ?>
 

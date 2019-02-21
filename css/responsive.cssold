@@ -1,0 +1,643 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Contents
+==================================================
+00. RETINA CSS
+01. TESTING TEXT
+02. BASE STYLES (1140px)
+03. #DESKTOP (960px)
+04. #Tablet (Portrait)
+05. #Mobile (Portrait)
+06. #Mobile (Landscape)
+*/
+
+/*
+=============================================== 00. RETINA CSS ===============================================
+
+*/
+html{
+  overflow-x:hidden;
+  }
+.cp{    color: white;
+    float: left;
+    font-family: Economica,sans-serif;
+    font-size: 20px;
+    margin-left: 131px;
+    margin-right: 10px;
+    margin-top: 49px;
+    width: 308px;
+}
+.wcps-items-price{
+font-family:Arial, Helvetica, sans-serif !important;}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	
+	/* Retina Zoom Icons*/
+	.zoom-icon2 { background-size: 1200px 900px;}
+	.zoom-icon-article2 { background-size: 1200px 900px ;}
+	
+	
+	/* Various Other Icons*/
+	#s {background-image: url(../images/search-magnify@2x.png); background-size: 30px 30px; }
+	body table.variations select, nav select, .filter-products select, .woocommerce_ordering select, body #main form.woocommerce-ordering  select {background-image: url(../images/select-arrow@2x.png),  -webkit-linear-gradient(#FAFAFA, #f9f9f9 40%, #e8e8e8) !important;background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+	background-image: -moz-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);background-position: center right; background-repeat: no-repeat; background-size:contain;}
+	.tag-cloud span {background-image: url(../images/tag-icon@2x.png); background-size: 11px 10px; }
+	ul.checkmark li {background-image: url(../images/checkmark@2x.png); background-size: 11px 12px; }
+	h1, h2 { background-image:url(../images/heading@2x.png); background-size: 10px 4px;}	
+	#container-sidebar .tag-cloud { background-image:url(../images/tag-background@2x.png); background-size: 802px 49px;}
+	.tag-cloud { background-image:url(../images/tag-background-large@2x.png); background-size: 1085px 49px;}
+	.flex-control-nav li a {background-image: url(../images/slider/bullet-nav@2x.png); background-size:22px 100px;}
+	.flex-direction-nav li a {background: url(../images/slider/arrows@2x.png); background-size:68px 69px;}
+	body a.def-button, body .def-button, body #respond input#submit, body input.wpcf7-submit { background-image:url(../images/button@2x.png); background-size: 600px 60px;}
+	body #main button.button.add-to-cart, body #main .item-container button.button, body a.add-cart {background-image:url(../images/button-add-cart@2x.png);background-size:600px 60px; }
+	body .def-button:hover, body #respond input#submit:hover, body input.wpcf7-submit:hover {background-image: url(../images/button-hover@2x.png); background-size:600px 60px;}
+	body #main .item-container button.button:hover, body #main button.button.add-to-cart:hover, body a.add-cart:hover {background-image: url(../images/button-add-cart-hover@2x.png); background-size:600px 60px;}	
+	ul.arrow li, #sidebar ul li { background-image:url(../images/sidebar-arrow@2x.png); background-size:15px 35px;}
+	
+}
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5) {
+	.flex-control-nav li a {background-image: url(../images/slider/bullet-nav@2x.png) !important; background-size:15px 68px;}
+}
+
+/* IE7-IE8 Fixes*/
+.lt-ie9 #s {background-image: url(../images/search-magnify.png); background-size: 30px 30px; }
+.lt-ie9 .tag-cloud span {background-image: url(../images/tag-icon.png); background-size: 11px 10px; }
+.lt-ie9 ul.checkmark li {background-image: url(../images/checkmark.png); background-size: 11px 12px; }
+.lt-ie9 h1, .lt-ie9 h2 { background-image:url(../images/heading.png); background-size: 10px 4px;}	
+.lt-ie9 #container-sidebar .tag-cloud { background-image:url(../images/tag-background.png); background-size: 802px 49px;}
+.lt-ie9 .tag-cloud { background-image:url(../images/tag-background-large.png); background-size: 1085px 49px;}
+.lt-ie9 .flex-control-nav li a {background-image: url(../images/slider/bullet-nav.png); background-size:22px 100px;}
+.lt-ie9 .flex-direction-nav li a {background: url(../images/slider/arrows.png); background-size:68px 69px;}
+.lt-ie9 body a.def-button, .lt-ie9 body .def-button, .lt-ie9 body #respond input#submit, .lt-ie9 body input.wpcf7-submit { background-image:url(../images/button.png); background-size: 600px 60px;}
+.lt-ie9 body #main button.button.add-to-cart, .lt-ie9 body #main .item-container button.button, .lt-ie9 body a.add-cart {background-image:url(../images/button-add-cart.png);background-size:600px 60px; }
+.lt-ie9 body .def-button:hover, .lt-ie9 body #respond input#submit:hover, .lt-ie9 body input.wpcf7-submit:hover {background-image: url(../images/button-hover.png) !important; background-size:600px 60px;}
+.lt-ie9 body #main .item-container button.button:hover, .lt-ie9 body #main button.button.add-to-cart:hover, .lt-ie9 body a.add-cart:hover {background-image: url(../images/button-add-cart-hover.png) !important; background-size:600px 60px;}	
+.lt-ie9 ul.arrow li, .lt-ie9 #sidebar ul li { background-image:url(../images/sidebar-arrow.png) no-repeat; background-size:15px 35px;}
+
+
+
+/*
+=============================================== 01. TESTING TEXT ===============================================
+*/
+body:after {position:relative; z-index:55; content: "less than 320px";font-size: 300%;font-weight: bold;position: fixed;bottom: 60px;width: 100%;text-align: center;background-color: hsla(1,60%,40%,0.7);color: #fff;
+display:none !important; /* -------------------- ADD OR REMOVE display:none !important; to display testing text -------------------- */}
+
+
+
+/*
+=============================================== 02. BASE STYLES (1140px) ===============================================
+*/
+/* Note: Design for a width of 1040px */
+body:after {content: "Wider than 1140px";background-color: hsla(270,60%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */
+html {-webkit-text-size-adjust: none;}	/* Removes webkit font resizing */ 
+body {max-width:100%; width:100%;}
+img {max-width:100%; height: auto; }
+footer .widget, .header-container, .container, #container-sidebar, #sidebar, .grid2column, .grid3column, .grid3columnbig, .grid4column, .grid4columnbig {-moz-transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;  }
+
+
+
+/*
+=============================================== 03. #DESKTOP (960px) ===============================================
+*/
+/* Note: Design for a width of 960px */
+@media only screen and (min-width: 981px) and (max-width:1140px) {
+
+body:after {content: "980px to 1139px";background-color: hsla(270,60%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */ 
+
+
+.header-container, .container {width:935px;} /* Default Width */
+#container-sidebar {width:654px; }
+
+/* Misc Adjustments */
+.sf-menu a {padding-right:18px; padding-left:18px;}  /* Top Menu Size */
+
+body #logo, body #logo img {
+max-width: 138px !important;
+}
+.owl-item {
+width: 171px !important;
+}
+#metaslider_75.flexslider .slides img {
+width: 217px;
+display: block;
+height: 147px;
+}
+#metaslider_75.flexslider .slides li {
+margin-right: 0px !important;
+margin:0px 0px 30px !important;
+padding:0px !important;
+}
+.metaslider-75{
+padding-left: 0px;
+padding-top: 10px;
+padding-right: 0px;
+}
+body .sf-menu a{
+font-size:28px !important;}
+
+#metaslider_75.flexslider .slides img {
+/* width: 190px; */
+display: block;
+/* height: 100px; */
+margin-right: 12px !important;
+margin-left: 72px !important;
+}
+}
+
+
+
+/*
+=============================================== 04. #Tablet (Portrait) ===============================================
+*/
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 981px) {
+body:after {content: "768 to 981x";background-color: hsla(270,60%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */ 
+
+/* Default Width */
+.header-container, .container { width: 735px; }
+#container-sidebar {width:490px; }
+#sidebar {width:220px;}
+
+/* Misc Fixes */
+.sf-menu {margin-left:5px;}
+header a.search-icon {display:inline-block; }
+header a.search-icon2 {display:block; text-indent:-999999px; width:25px; height:32px; bottom:0px; right:0px; position:absolute;}
+header #right-nav-bar .searchform, header #right-nav-bar #searchform { display:none; }
+header #right-nav-bar .searchform2 {display:inline-block; position:absolute; float:right; right:0px; top:0px;}
+.sf-menu a {padding-right:18px; padding-left:18px;}  /* Top Menu Size */
+#sidebar .widget-butt, body footer .widget-butt {display:none;}
+
+.owl-item{
+width:243px !important;
+margin:0px !important;}
+#logo img {
+max-width: 270px !important;
+}
+#metaslider_75.flexslider .slides li {
+margin-right: 10px !important;
+}
+/*ul#login-header-area {
+float: right;
+padding: 0;
+position: relative;
+top: 13px;
+left: -73px;
+}*/
+.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 20px;
+margin-left: 104px !important;
+margin-right: 10px;
+margin-top: 49px;
+width: 308px;
+}
+
+
+ul#login-header-area {
+/* float: right; */
+padding: 0;
+position: relative;
+top: 12px !important;
+/* left: -241px; */
+}
+body .sf-menu a{
+font-size:28px !important;}
+#metaslider_75.flexslider .slides img {
+width: 132px;
+display: block;
+height: 100px;
+}
+}
+
+
+
+/*
+=============================================== 05. #Mobile (Portrait) ===============================================
+*/
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 768px) {
+body:after {content: "768px"; background-color: hsla(90,60%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */ 
+
+
+/* Default Width */
+.header-container, .container { width: 300px; }
+body .item-container, body .extra-container-spacing {padding:10px 10px 0px 10px;}
+body .extra-container-spacing-2 {padding:10px;}
+
+/* Default Grid */
+body #main li.product.column-4 , body #main  li.product.column-3, body #main  li.product.column-2, .lt-ie8 body #main  li.product.column-4, .lt-ie8 body #main  li.product.column-3, .lt-ie8 body #main  li.product.column-2, .lt-ie8 body #main  li.product.column-1,
+#footer-widgets .footer-2-column .widget, #footer-widgets .footer-3-column .widget, #footer-widgets .footer-4-column .widget,
+.grid2column, #container-sidebar, #sidebar, .grid2column, .grid3column, .grid3columnbig, .grid4column, .grid4columnbig, #container-sidebar .grid2column, #container-sidebar .grid3column, #container-sidebar .grid3columnbig, #container-sidebar .grid4column, #container-sidebar .grid4columnbig 
+{width:100%; margin-bottom:15px;}
+
+
+/* Checkout + Cart Styling */
+table.cart th.product-remove,  table.cart td.product-remove, table.cart td.product-thumbnail, table.cart th.product-thumbnail,
+table.cart th.product-price, table.cart td.product-price
+ {display:none !important;}
+
+table.cart input.button {margin-top:2px;}
+table.cart input.checkout-button {margin-top:5px; margin-bottom:10px;}
+
+.cart_totals, .cart-collaterals, form.shipping_calculator {width:100% !important;}
+form.checkout .col-1, form.checkout .col-2 {width:100% !important; margin-bottom:15px;}
+
+body #main table.my_account_orders a.button {font-size:11px; padding:8px 10px;}
+body #main table.my_account_orders {position:relative; left:-9px; background:#fff;}
+
+/* Misc Fixes */
+header #right-nav-bar {display:none;}
+header #logo, footer #copyright {float:none; margin:0 auto; text-align:center;}
+/*ul#login-header-area { top:0px;  margin:0 auto; text-align:center; float:none;}*/
+ul#login-header-area li { padding:0px 7px; font-size:85%; float:none; }
+#login-header-area a {padding:18px 0px; }
+.flex-direction-nav {display:block;}
+.flex-control-nav {bottom:5px; right:12px; }
+.flex-control-nav li a {width: 16px; height:16px;  background-image: url(../images/slider/bullets-nav-small.png); }
+.flex-control-nav li a:hover {background-position: 0 -20px;}
+.flex-control-nav li a.active {background-position: 0 -20px; cursor: default;}
+.homepage-adjust {bottom:0px;}
+.filter-products, .woocommerce_ordering, body #main form.woocommerce-ordering {float:none;  margin:0px auto 15px auto; }
+.filter-products select, .woocommerce_ordering select, body #main form.woocommerce-ordering  select {display:block; top:0px; margin:0px auto;}
+.commentlist {width:95%; left:0px;}
+.commentlist .children li.comment .comment-meta {margin-left:0px;}
+.commentlist .avatar {display:none;}
+
+
+/* Select Menu */
+nav ul { display: none; }  
+nav select option { font-size:12px; background:#fff; color:#888;}
+header nav {float:none; text-align:center; z-index:0; }
+nav select { text-transform:none; display:block; margin:0px auto 20px auto; width:100%; min-width: 300px; max-width: 100%; -webkit-appearance: none; -moz-appearance: normal; appearance: normal;
+-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-padding-end: 20px; -webkit-padding-start: 2px; -webkit-user-select: none;-moz-user-select: none;
+background-image: url(../images/select-arrow.png),  -webkit-linear-gradient(#FAFAFA, #f9f9f9 40%, #e8e8e8);
+background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+background-image: -moz-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+background-position: center right; background-repeat: no-repeat;
+font-size:13px;
+border: 1px solid #aaaaaa;
+color: #555555;
+padding:7px 5px 7px 10px;
+position:relative;
+top:9px;
+}
+.owl-item {
+width: 110px !important;
+margin: -6px !important;
+}
+ul#login-header-area {
+top: 0px;
+/* margin: 0 auto; */
+text-align: center;
+float: none;
+margin-top: -59px !important;
+}
+
+
+.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 15px;
+margin-left: 31px;
+margin-right: 10px;
+margin-top: 20px;
+width: 308px;
+}
+ul#login-header-area {
+top: 0px;
+/* margin: 0 auto; */
+text-align: center;
+float: none;
+margin-top: -59px !important;
+}
+
+/*.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 20px;
+margin-left: 31px;
+margin-right: 10px;
+margin-top: 19px;
+width: 308px;
+}*/
+
+table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr {
+    margin-left: 258px !important;
+    margin-right: 10px;
+}
+.header-container, .container{
+width:550px;
+}
+.owl-item {
+width: 182px !important;
+margin: 0px !important;
+}
+
+}
+
+
+/*
+=============================================== 06. #Mobile (Landscape) ===============================================
+*/
+/* Note: Design for a width of 480px */
+@media only screen and (max-width: 640px) {
+
+
+body:after { content: "480 to 767px"; background-color: hsla(150,50%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */
+
+/* Default Width */
+.header-container, .container { width: 420px; }
+
+body #logo img {max-width:40%; height: auto;}
+.lt-ie9 body #logo {max-width:40% ; }
+ul#login-header-area {
+top: 100px !important;
+text-align: center;
+float: left;
+/* margin-top: -59px !important; */
+height: 182px;
+margin-top: auto;
+right:-73px;
+}
+
+
+.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 15px;
+margin-left: 131px;
+margin-right: 10px;
+margin-top: 20px;
+width: 308px;
+}
+.owl-item {
+width: 137px !important;
+margin: 0px !important;
+}
+
+table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr {
+    margin-left: 219px !important;
+    margin-right: 10px;
+}
+#metaslider_75.flexslider .slides img {
+width: 132px;
+display: block;
+height: 100px;
+}
+#metaslider_75.flexslider .slides li{
+0px !important;}
+/*#metaslider_75.flexslider .slides li {
+margin-right: 4px !important;
+margin: 0px 0px 0px 61px !important;
+padding: 0px !important;
+}*/
+.metaslider-75{
+padding-left: 0px;
+padding-top: 10px;
+padding-right: 0px;
+}
+.wcps-container #wcps-134 div.wcps-items-cart a.add_to_cart_button, .wcps-container #wcps-134 div.wcps-items-cart a.added_to_cart {
+background: #e5e5e0;
+color: #5b5b5b;
+
+}
+
+}
+@media only screen and (max-width: 480px) {
+body:after { content: "480px"; background-color: hsla(150,50%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */
+
+/* Default Width */
+.header-container, .container { width: 300px; }
+
+body #logo img {max-width:40%; height: auto;}
+.lt-ie9 body #logo {max-width:40% ; }
+.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 20px;
+margin-left: 29px;
+margin-right: 10px;
+margin-top: 0px;
+width: 308px;
+}
+ul#login-header-area {
+top: 100px !important;
+text-align: center;
+float: left;
+height: 182px;
+margin-top: auto;
+right: -9px;
+}
+.owl-item {
+width: 138px !important;
+margin: 6px !important;
+}
+
+table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr {
+    margin-left: 127px !important;
+    margin-right: 10px;
+}
+  .owl-theme .owl-controls .owl-buttons div{
+  margin:0px;
+  }
+  #metaslider_75.flexslider .slides img {
+width: 265px;
+display: block;
+height: 100px;
+margin-left: 28px;
+}
+}
+@media only screen and (max-width: 320px) {
+  .owl-theme .owl-controls .owl-buttons div{
+  margin:0px;
+  }
+
+
+body:after {content: "0 to 320px"; background-color: hsla(90,60%,40%,0.7);}/* Notify what @media browser is using, Disable above by display:none; */ 
+
+
+/* Default Width */
+.header-container, .container { width: 264px; }
+body .item-container, body .extra-container-spacing {padding:10px 10px 0px 10px;}
+body .extra-container-spacing-2 {padding:10px;}
+
+/* Default Grid */
+body #main li.product.column-4 , body #main  li.product.column-3, body #main  li.product.column-2, .lt-ie8 body #main  li.product.column-4, .lt-ie8 body #main  li.product.column-3, .lt-ie8 body #main  li.product.column-2, .lt-ie8 body #main  li.product.column-1,
+#footer-widgets .footer-2-column .widget, #footer-widgets .footer-3-column .widget, #footer-widgets .footer-4-column .widget,
+.grid2column, #container-sidebar, #sidebar, .grid2column, .grid3column, .grid3columnbig, .grid4column, .grid4columnbig, #container-sidebar .grid2column, #container-sidebar .grid3column, #container-sidebar .grid3columnbig, #container-sidebar .grid4column, #container-sidebar .grid4columnbig 
+{width:100%; margin-bottom:15px;}
+
+
+/* Checkout + Cart Styling */
+table.cart th.product-remove,  table.cart td.product-remove, table.cart td.product-thumbnail, table.cart th.product-thumbnail,
+table.cart th.product-price, table.cart td.product-price
+ {display:none !important;}
+
+table.cart input.button {margin-top:2px;}
+table.cart input.checkout-button {margin-top:5px; margin-bottom:10px;}
+
+.cart_totals, .cart-collaterals, form.shipping_calculator {width:100% !important;}
+form.checkout .col-1, form.checkout .col-2 {width:100% !important; margin-bottom:15px;}
+
+body #main table.my_account_orders a.button {font-size:11px; padding:8px 10px;}
+body #main table.my_account_orders {position:relative; left:-9px; background:#fff;}
+
+/* Misc Fixes */
+header #right-nav-bar {display:none;}
+header #logo, footer #copyright {float:none; margin:0 auto; text-align:center;}
+/*ul#login-header-area { top:0px;  margin:0 auto; text-align:center; float:none;}*/
+ul#login-header-area li { padding:0px 7px; font-size:85%; float:none; }
+#login-header-area a {padding:18px 0px; }
+.flex-direction-nav {display:block;}
+.flex-control-nav {bottom:5px; right:12px; }
+.flex-control-nav li a {width: 16px; height:16px;  background-image: url(../images/slider/bullets-nav-small.png); }
+.flex-control-nav li a:hover {background-position: 0 -20px;}
+.flex-control-nav li a.active {background-position: 0 -20px; cursor: default;}
+.homepage-adjust {bottom:0px;}
+.filter-products, .woocommerce_ordering, body #main form.woocommerce-ordering {float:none;  margin:0px auto 15px auto; }
+.filter-products select, .woocommerce_ordering select, body #main form.woocommerce-ordering  select {display:block; top:0px; margin:0px auto;}
+.commentlist {width:95%; left:0px;}
+.commentlist .children li.comment .comment-meta {margin-left:0px;}
+.commentlist .avatar {display:none;}
+
+
+/* Select Menu */
+nav ul { display: none; }  
+nav select option { font-size:12px; background:#fff; color:#888;}
+header nav {float:none; text-align:center; z-index:0; }
+nav select { text-transform:none; display:block; margin:0px auto 20px auto; width:100%; min-width: 254px; max-width: 100%; -webkit-appearance: none; -moz-appearance: normal; appearance: normal;
+-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-padding-end: 20px; -webkit-padding-start: 2px; -webkit-user-select: none;-moz-user-select: none;
+background-image: url(../images/select-arrow.png),  -webkit-linear-gradient(#FAFAFA, #f9f9f9 40%, #e8e8e8);
+background: linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+background-image: -moz-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+background-position: center right; background-repeat: no-repeat;
+font-size:13px;
+border: 1px solid #aaaaaa;
+color: #555555;
+padding:7px 5px 7px 10px;
+position:relative;
+top:9px;
+}
+	table.cnss-social-icon tr td, table.cnss-social-icon, table.cnss-social-icon tr{
+	margin-right:10px;
+	margin-left:119px !important;
+	}
+	.wpcf7 input{
+	width:92% !important;}
+	.wpcf7 textarea{
+	width:92% !important;}
+	.owl-carousel{
+	width:180% !important;}
+	
+	#login-header-area a.check-header {
+background: url(images/check-header.png) center right no-repeat;
+padding-right: 16px;
+margin-right: -24px !important;
+}
+/*.cp{    
+color: white;
+    float: left;
+    font-family: Economica,sans-serif;
+    font-size: 20px;
+    margin-left: 7px !important;
+    margin-right: 10px;
+    margin-top: 49px;
+    width: 308px;
+}*/
+/*body #logo, body #logo img{
+max-width:266px !important;}*/
+#logo, body #logo img {
+max-width: 242px !important;
+}
+.cp {
+color: white;
+float: left;
+font-family: Economica,sans-serif;
+font-size: 20px;
+margin-left: 7px !important;
+margin-right: 10px;
+margin-top: 0px;
+width: 308px;
+}
+
+ul#login-header-area {
+top: 73px !important;
+text-align: center;
+float: left;
+height: 143px !important;
+margin-top: auto;
+right: 6px;
+}
+
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+/* margin: -7px; */
+margin-top: 10px;
+margin-right: 0px;
+margin-left: -1px;
+}
+
+
+
+.owl-item {
+width: 135px !important;
+margin: -8px !important;
+padding: 2px !important;
+}
+
+.woocommerce table.shop_table, .woocommerce-page table.shop_table {
+border: 1px solid rgba(0,0,0,0.1);
+margin: 0 -1px 24px -5px !important;
+text-align: left;
+width: 100%;
+border-collapse: separate;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.woocommerce table.shop_table td, .woocommerce-page table.shop_table td {
+/* border-top: 1px solid rgba(0,0,0,0.1); */
+padding: 6px 8px !important;
+vertical-align: middle;
+margin-left: 4px;
+margin-right: 9px;
+}
+
+wcps-items-title{
+font-size:11px !important; }
+.owl-item {
+width: 132px !important;
+margin: 0px !important;
+padding: 2px !important;
+}
+#metaslider_75.flexslider .slides img {
+width: 265px;
+display: block;
+height: 100px;
+margin-left: 28px;
+}
+}

@@ -14,6 +14,9 @@ global $woocommerce;
 $order = new WC_Order( $order_id );
 ?>
 <h2><?php _e( 'Order Details', 'woocommerce' ); ?></h2>
+
+<div class="item-container extra-container-spacing-2">
+
 <table class="shop_table order_details">
 	<thead>
 		<tr>
@@ -133,3 +136,4 @@ $order = new WC_Order( $order_id );
 <?php endif; ?>
 
 <div class="clear"></div>
+</div>

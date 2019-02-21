@@ -10,16 +10,15 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $woocommerce;
-
-$woocommerce->show_messages();
 ?>
 
-<?php do_action( 'woocommerce_before_cart' ); ?>
+<?php $woocommerce->show_messages(); ?>
+
+
+<div class="item-container extra-container-spacing-2">
 
 <form action="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" method="post">
-
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
-
 <table class="shop_table cart" cellspacing="0">
 	<thead>
 		<tr>
@@ -131,7 +130,7 @@ $woocommerce->show_messages();
 					</div>
 				<?php } ?>
 
-				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout &rarr;', 'woocommerce' ); ?>" />
+				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Basket', 'woocommerce' ); ?>" /> <input type="submit" class="checkout-button button alt" name="proceed" value="<?php _e( 'Proceed to Checkout &rarr;', 'woocommerce' ); ?>" />
 
 				<?php do_action('woocommerce_proceed_to_checkout'); ?>
 
@@ -142,11 +141,8 @@ $woocommerce->show_messages();
 		<?php do_action( 'woocommerce_after_cart_contents' ); ?>
 	</tbody>
 </table>
-
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
-
 </form>
-
 <div class="cart-collaterals">
 
 	<?php do_action('woocommerce_cart_collaterals'); ?>
@@ -157,4 +153,4 @@ $woocommerce->show_messages();
 
 </div>
 
-<?php do_action( 'woocommerce_after_cart' ); ?>
+</div>

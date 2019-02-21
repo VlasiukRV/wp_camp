@@ -1,3 +1,5 @@
+<div class="item-container extra-container-spacing">
+
 <?php
 /**
  * Thankyou page
@@ -12,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $woocommerce;
 
 if ( $order ) : ?>
+
 
 	<?php if ( in_array( $order->status, array( 'failed' ) ) ) : ?>
 
@@ -62,8 +65,13 @@ if ( $order ) : ?>
 	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
 	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
 
+
+
 <?php else : ?>
+
+
 
 	<p><?php _e( 'Thank you. Your order has been received.', 'woocommerce' ); ?></p>
 
 <?php endif; ?>
+</div>

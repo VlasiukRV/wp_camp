@@ -1,12 +1,8 @@
+<?php if(of_get_option('fw_shop', '1')): ?>
+<div id="sidebar">
 <?php
-/**
- * Sidebar
- *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     1.6.4
- */
-
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-
-get_sidebar('shop'); ?>
+if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('WooCommerce Sidebar')): 
+endif;
+?>
+</div>
+<?php endif; ?>

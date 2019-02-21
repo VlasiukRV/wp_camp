@@ -13,9 +13,13 @@ global $woocommerce; ?>
 
 <?php $woocommerce->show_messages(); ?>
 
+<div class="item-container">
+
 <?php do_action('woocommerce_before_customer_login_form'); ?>
 
 <?php if (get_option('woocommerce_enable_myaccount_registration')=='yes') : ?>
+
+
 
 <div class="col2-set" id="customer_login">
 
@@ -23,7 +27,7 @@ global $woocommerce; ?>
 
 <?php endif; ?>
 
-		<h2><?php _e( 'Login', 'woocommerce' ); ?></h2>
+		<h3><?php _e( 'Login', 'woocommerce' ); ?></h3>
 		<form method="post" class="login">
 			<p class="form-row form-row-first">
 				<label for="username"><?php _e( 'Username or email', 'woocommerce' ); ?> <span class="required">*</span></label>
@@ -106,6 +110,9 @@ global $woocommerce; ?>
 	</div>
 
 </div>
+
+
 <?php endif; ?>
+</div>
 
 <?php do_action('woocommerce_after_customer_login_form'); ?>

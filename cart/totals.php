@@ -19,20 +19,20 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 
 	<?php if ( ! $woocommerce->shipping->enabled || $available_methods || ! $woocommerce->customer->get_shipping_country() || ! $woocommerce->customer->has_calculated_shipping() ) : ?>
 
-		<h2><?php _e( 'Cart Totals', 'woocommerce' ); ?></h2>
+		<h2><?php _e( 'Basket Totals', 'woocommerce' ); ?></h2>
 
 		<table cellspacing="0">
 			<tbody>
 
 				<tr class="cart-subtotal">
-					<th><strong><?php _e( 'Cart Subtotal', 'woocommerce' ); ?></strong></th>
+					<th><strong><?php _e( 'Basket Subtotal', 'woocommerce' ); ?></strong></th>
 					<td><strong><?php echo $woocommerce->cart->get_cart_subtotal(); ?></strong></td>
 				</tr>
 
 				<?php if ( $woocommerce->cart->get_discounts_before_tax() ) : ?>
 
 					<tr class="discount">
-						<th><?php _e( 'Cart Discount', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'woocommerce' ); ?></a></th>
+						<th><?php _e( 'Basket Discount', 'woocommerce' ); ?> <a href="<?php echo add_query_arg( 'remove_discounts', '1', $woocommerce->cart->get_cart_url() ) ?>"><?php _e( '[Remove]', 'woocommerce' ); ?></a></th>
 						<td>-<?php echo $woocommerce->cart->get_discounts_before_tax(); ?></td>
 					</tr>
 

@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     1.6.5
+ * @version     2.0.3
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -50,12 +50,17 @@ global $woocommerce, $product, $post;
 									$terms = get_terms( sanitize_title( $name ), $args );
 
 									foreach ( $terms as $term ) {
-										if ( ! in_array( $term->slug, $options ) ) continue;
-										echo '<option value="' . $term->slug . '" ' . selected( $selected_value, $term->slug, false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</option>';
+										if ( ! in_array( $term->slug, $options ) )
+											continue;
+
+										echo '<option value="' . esc_attr( $term->slug ) . '" ' . selected( $selected_value, $term->slug, false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</option>';
 									}
 								} else {
-									foreach ( $options as $option )
-										echo '<option value="' . $option . '" ' . selected( $selected_value, $option, false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $option ) . '</option>';
+
+									foreach ( $options as $option ) {
+										echo '<option value="' . esc_attr( sanitize_title( $option ) ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $option ), false ) . '>' . esc_html( apply_filters( 'woocommerce_variation_option_name', $option ) ) . '</option>';
+									}
+
 								}
 							}
 						?>
@@ -75,7 +80,7 @@ global $woocommerce, $product, $post;
 		<div class="variations_button">
 			<input type="hidden" name="variation_id" value="" />
 			<?php woocommerce_quantity_input(); ?>
-			<button type="submit" class="single_add_to_cart_button button alt"><?php echo apply_filters('single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $product->product_type); ?></button>
+			<button type="submit" class="single_add_to_cart_button button alt"><?php echo apply_filters('single_add_to_cart_text', __( 'Add to Basket', 'woocommerce' ), $product->product_type); ?></button>
 		</div>
 	</div>
 	<div><input type="hidden" name="product_id" value="<?php echo esc_attr( $post->ID ); ?>" /></div>

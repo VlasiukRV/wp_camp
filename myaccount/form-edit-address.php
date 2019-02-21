@@ -16,6 +16,8 @@ get_currentuserinfo();
 
 <?php $woocommerce->show_messages(); ?>
 
+<div class="item-container">
+
 <?php if (!$load_address) : ?>
 
 	<?php woocommerce_get_template('myaccount/my-address.php'); ?>
@@ -43,8 +45,10 @@ get_currentuserinfo();
 			<input type="submit" class="button" name="save_address" value="<?php _e( 'Save Address', 'woocommerce' ); ?>" />
 			<?php $woocommerce->nonce_field('edit_address') ?>
 			<input type="hidden" name="action" value="edit_address" />
-		</p>
+		</p><br>
 
 	</form>
 
 <?php endif; ?>
+
+</div>

@@ -1,0 +1,37 @@
+-----------------------put in template------------------------------------
+
+<ul class="slides">
+        <?php $query= mysql_query("select * from  cus_gallery where status='Active' ");
+	while($row=mysql_fetch_array($query) )
+	{
+	?>
+        <li><img src="<?php echo content_url();?>/uploads/slider/<?php echo $row[image];?>" alt="" class="ppt-img" />
+          <div class="slide-text-box">
+            <h1><span class="slide-text-blue"><?php echo $row[title];?></span><br />
+              <?php echo $row[sub_title];?></h1>
+            <p> <?php echo $row[detail];?> </p>
+            <div class="read-btn"><a href=" <?php echo $row[linked];?>"><img src="<?php bloginfo('template_url');?>/images/read-more-btn.jpg"/></a></div>
+          </div>
+        </li>
+        <?php }	?>
+
+    </ul>
+
+
+/*-----------------put in function.php------------------------*/
+
+add_action('admin_menu', 'slider_menu');
+function slider_menu()
+{
+add_menu_page('Slider', 'Slider', 10, 'manage_slider', 'manage_slider');
+add_submenu_page('manage_slider','Add Slider', 'Add Slider', 10, 'add_slider', 'add_slider');
+
+}
+function manage_slider()
+{
+include("theme_options/slide/slider_options.php");
+}
+function add_slider()
+{
+include("theme_options/slide/add_slider.php");
+}
